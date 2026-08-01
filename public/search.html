@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d4fc79 0%, #96e6a1 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .search-container {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 400px;
+    }
+    .search-container h1 {
+      margin-bottom: 20px;
+      color: #27ae60;
+    }
+    .search-box {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+    .search-box input {
+      width: 70%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px 0 0 6px;
+      font-size: 1em;
+    }
+    .search-box button {
+      padding: 10px 20px;
+      border: none;
+      background: #27ae60;
+      color: #fff;
+      font-size: 1em;
+      border-radius: 0 6px 6px 0;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .search-box button:hover {
+      background: #1e8449;
+    }
+    .results {
+      margin-top: 20px;
+      font-size: 0.95em;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <h1>Search</h1>
+    <form class="search-box" action="/search" method="get">
+      <input type="text" name="query" placeholder="Type your search..." required>
+      <button type="submit">Go</button>
+    </form>
+    <div class="results">
+      <!-- Search results will appear here -->
+      <p>Enter a keyword above and press Go.</p>
+    </div>
+  </div>
+</body>
+</html>

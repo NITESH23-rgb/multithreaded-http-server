@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>405 Method Not Allowed</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #fbc2eb 0%, #a6c1ee 100%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #333;
+    }
+    .error-container {
+      text-align: center;
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+      max-width: 500px;
+    }
+    .error-code {
+      font-size: 6em;
+      font-weight: bold;
+      color: #9b59b6;
+      margin: 0;
+    }
+    .error-message {
+      font-size: 1.5em;
+      margin: 10px 0 20px;
+    }
+    a {
+      display: inline-block;
+      padding: 12px 25px;
+      background: #9b59b6;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #7d3c98;
+    }
+  </style>
+</head>
+<body>
+  <div class="error-container">
+    <p class="error-code">405</p>
+    <p class="error-message">Method Not Allowed</p>
+    <p>The request method is not supported by this page.</p>
+    <a href="index.html">Go Back Home</a>
+  </div>
+</body>
+</html>
