@@ -117,3 +117,36 @@ http://localhost:8080
 - Configuration file
 - Compression (gzip)
 
+---
+
+## Screenshots
+
+### Home Page
+
+The default homepage served by the HTTP server.
+
+![Home Page](screenshots/home.png)
+
+### Custom 404 Page
+
+The server returns a custom 404 page when the requested resource is not found.
+
+![404 Page](screenshots/404.png)
+
+## 403 Forbidden
+
+Directory traversal attempts are blocked by the server.
+
+![403 Page](screenshots/403.png)
+
+## Request Logging
+
+Each HTTP request is logged with timestamp, request path, and response status.
+
+![Server Log](screenshots/server-log.png)
+
+## Concurrent Request Handling
+
+The server uses a thread pool to process multiple client connections concurrently.
+
+![Thread Pool](screenshots/thread-pool.png)
